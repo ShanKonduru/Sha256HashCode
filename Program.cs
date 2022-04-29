@@ -5,6 +5,11 @@ using System.Text;
 
 namespace Sha256HashCode {
     class Program {
+        /// <summary>
+        /// Calculate 256 Hash code
+        /// </summary>
+        /// <param name="rawData">Hash would be generated for given input string (raw data string)</param>
+        /// <returns>returns hash code</returns>
         public static string CalculateHash (string rawData) {
             // Create a SHA256   
             using (SHA256 sha256Hash = SHA256.Create ()) {
@@ -16,10 +21,15 @@ namespace Sha256HashCode {
                 for (int i = 0; i < bytes.Length; i++) {
                     builder.Append (bytes[i].ToString ("x2"));
                 }
+
+                // returns byte string
                 return builder.ToString ();
             }
         }
 
+        /// <summary>
+        /// Generate Hashcode Without Data Change
+        /// </summary>
         public static void GenerateHashcodeWithoutDataChange () {
             string rawData = "Hello World!";
             for (int i = 1; i <= 10; i++) {
@@ -27,7 +37,9 @@ namespace Sha256HashCode {
                 Console.WriteLine (hash + " input Data " + rawData);
             }
         }
-
+        /// <summary>
+        ///  Generate Hashcode With Data Change
+        /// </summary>
         public static void GenerateHashcodeWithDataChange () {
             for (int i = 1; i <= 10; i++) {
                 string rawData = "Hello World!" + i.ToString ();
@@ -35,6 +47,11 @@ namespace Sha256HashCode {
                 Console.WriteLine (hash + " input Data " + rawData);
             }
         }
+
+        /// <summary>
+        /// Generate Hashcode With Difficulty Level
+        /// </summary>
+        /// <param name="difficultyLevel">Difficulty Level</param>
 
         public static void GenerateHashcodeWithDifficultyLevel (int difficultyLevel) {
             string rawData = "Hello World!";
@@ -47,10 +64,13 @@ namespace Sha256HashCode {
                 rawData = "Hello World!" + numberOfInterations.ToString ();
                 hash = CalculateHash (rawData);
                 numberOfInterations++;
-                //// Console.Write (numberOfInterations + ", ");
             }
             Console.WriteLine (hash + " input Data " + rawData);
         }
+
+        /// <summary>
+        /// Generate Hashcode With Difficulty Level
+        /// </summary>
 
         public static void GenerateHashcodeWithDifficultyLevel () {
             int difficultyLevel = 1;
@@ -67,12 +87,13 @@ namespace Sha256HashCode {
         }
 
         static void Main (string[] args) {
-            /*
+
             Console.WriteLine ("Observe the Hash code DID NOT change as the input data is same");
             GenerateHashcodeWithoutDataChange ();
+
             Console.WriteLine ("Observe the Hash code changes as the input data changes");
             GenerateHashcodeWithDataChange ();
-            */
+
             GenerateHashcodeWithDifficultyLevel ();
         }
     }
