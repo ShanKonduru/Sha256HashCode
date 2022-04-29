@@ -28,6 +28,20 @@ namespace Sha256HashCode {
         }
 
         /// <summary>
+        /// Generate Hashcode with minor Data Change
+        /// </summary>
+        public static void GenerateHashcodeWithMinorDataChange () {
+            string rawData = "Hello World!";
+            string hash = CalculateHash (rawData);
+            Console.WriteLine (hash + " input Data " + rawData);
+
+            rawData = "Hello World;";
+            hash = CalculateHash (rawData);
+            Console.WriteLine (hash + " input Data " + rawData);
+
+        }
+
+        /// <summary>
         /// Generate Hashcode Without Data Change
         /// </summary>
         public static void GenerateHashcodeWithoutDataChange () {
@@ -86,15 +100,17 @@ namespace Sha256HashCode {
             }
         }
 
-        static void Main (string[] args) {
-
+        public static void Main (string[] args) {
             Console.WriteLine ("Observe the Hash code DID NOT change as the input data is same");
             GenerateHashcodeWithoutDataChange ();
 
             Console.WriteLine ("Observe the Hash code changes as the input data changes");
-            GenerateHashcodeWithDataChange ();
+            GenerateHashcodeWithMinorDataChange ();
 
-            GenerateHashcodeWithDifficultyLevel ();
+            // Console.WriteLine ("Observe the Hash code changes as the input data changes");
+            // GenerateHashcodeWithDataChange ();
+
+            // GenerateHashcodeWithDifficultyLevel ();
         }
     }
 }
