@@ -1,0 +1,13 @@
+C:\Users\E001150\Sha256HashCode\bin\Debug\netcoreapp3.1\Sha256HashCode.exe
+C:\Users\E001150\Sha256HashCode\bin\Debug\netcoreapp3.1\Sha256HashCode.deps.json
+C:\Users\E001150\Sha256HashCode\bin\Debug\netcoreapp3.1\Sha256HashCode.runtimeconfig.json
+C:\Users\E001150\Sha256HashCode\bin\Debug\netcoreapp3.1\Sha256HashCode.runtimeconfig.dev.json
+C:\Users\E001150\Sha256HashCode\bin\Debug\netcoreapp3.1\Sha256HashCode.dll
+C:\Users\E001150\Sha256HashCode\bin\Debug\netcoreapp3.1\Sha256HashCode.pdb
+C:\Users\E001150\Sha256HashCode\obj\Debug\netcoreapp3.1\Sha256HashCode.csprojAssemblyReference.cache
+C:\Users\E001150\Sha256HashCode\obj\Debug\netcoreapp3.1\Sha256HashCode.AssemblyInfoInputs.cache
+C:\Users\E001150\Sha256HashCode\obj\Debug\netcoreapp3.1\Sha256HashCode.AssemblyInfo.cs
+C:\Users\E001150\Sha256HashCode\obj\Debug\netcoreapp3.1\Sha256HashCode.csproj.CoreCompileInputs.cache
+C:\Users\E001150\Sha256HashCode\obj\Debug\netcoreapp3.1\Sha256HashCode.dll
+C:\Users\E001150\Sha256HashCode\obj\Debug\netcoreapp3.1\Sha256HashCode.pdb
+C:\Users\E001150\Sha256HashCode\obj\Debug\netcoreapp3.1\Sha256HashCode.genruntimeconfig.cache
