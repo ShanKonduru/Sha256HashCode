@@ -112,5 +112,20 @@ namespace Sha256HashCode {
 
             // GenerateHashcodeWithDifficultyLevel ();
         }
+
+        private static Decimal ParseHexString (string hexNumber) {
+            hexNumber = hexNumber.Replace ("x", string.Empty);
+            long result = 0;
+            long.TryParse (hexNumber, System.Globalization.NumberStyles.HexNumber, null, out result);
+            return result;
+        }
+
+        private static void ConvertHexNumberToDecimalNumber () {
+            string hex1 = "7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9069";
+            Console.WriteLine (ParseHexString (hex1));
+
+            string hex2 = "cbd2ca479c9549ab5f19aebf4126eef2f516dd24d35a5a7f4bf05e7920cc5a7b";
+            Console.WriteLine (ParseHexString (hex2));
+        }
     }
 }
